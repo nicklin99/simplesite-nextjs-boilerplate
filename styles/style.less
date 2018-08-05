@@ -1,0 +1,119 @@
+/* 全局样式 */
+
+@import '~normalize.css';
+@import '~bootstrap/dist/css/bootstrap-grid.min.css';
+@import 'base.css';
+@import 'var.less';
+
+body {
+    margin: 0;
+    font-family: apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
+}
+p{
+    margin-bottom: 1rem;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+    line-height: 1.15;
+    font-size: 36px;
+    color: @colorAccent;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title2{
+    margin: 0;
+    width: 100%;
+    line-height: 1.15;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.titleA{
+    color: #000;
+}
+
+.page {
+    margin: 0 auto;
+    width: 1350px;
+}
+.section {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.sectionA{
+    &:extend(.section);
+    background-color: @colorLight;
+}
+
+.btn-accent{
+    background-color: @colorAccent;
+    color: #222;
+    transition: background-color 0.2s linear;
+}
+.btn-lg{
+    padding-top: 0.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+}
+
+.footer_navimg{
+    display: block;
+    margin: 0 auto;
+}
+.footer{
+    padding: 10px 0px;
+}
+.footer-logo{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.hero {
+    width: 100%;
+    color: #333;
+  }
+  .title {
+    margin: 0;
+    width: 100%;
+    padding-top: 80px;
+    line-height: 1.15;
+    font-size: 48px;
+  }
+  .title,
+  .description {
+    text-align: center;
+  }
+  .row {
+    max-width: 880px;
+    margin: 80px auto 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    padding: 18px 18px 24px;
+    width: 220px;
+    text-align: left;
+    text-decoration: none;
+    color: #434343;
+    border: 1px solid #9b9b9b;
+  }
+  .card:hover {
+    border-color: #067df7;
+  }
+  .card h3 {
+    margin: 0;
+    color: #067df7;
+    font-size: 18px;
+  }
+  .card p {
+    margin: 0;
+    padding: 12px 0 0;
+    font-size: 13px;
+    color: #333;
+  }
