@@ -4,7 +4,7 @@
  * styles 全局样式，难免会用到 normalize.css
  */
 const path = require('path')
-
+const langs = require('./packages/lang')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const cssLoaderConfig = require('@zeit/next-css/css-loader-config')
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config')
@@ -14,11 +14,8 @@ const _cssLoaderOptions = {
   localIdentName: "[local]_[hash:base64:5]",
 }
 
-
 const exportPathMap = function(defaultPathMap) {
-  return {
-    '/': { page: '/' },
-  }
+  return getLangsPages(langs)
 }
 
 const isProd = process.env.NODE_ENV === 'production'
